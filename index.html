@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Template</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                touch-action: none;
+            }
+        </style>
+      <script src="./lib/p5.min.js"></script>
+      <script src="./lib/p5.sound.min.js"></script>
+      <script src="./lib/gl-matrix-min.js"></script>
+      <script src="./sketch.js"></script>
+  </head>
+
+  <body>
+      <main>
+      </main>
+      <p id="render-time">Rendering...</p>
+      <div style="display: flex;">
+        <button onclick="moveCamera(1, 0, 0)">^</button>
+        <button onclick="moveCamera(-1, 0, 0)">v</button>
+        <button onclick="moveCamera(0, 1, 0)">></button>
+        <button onclick="moveCamera(0, -1, 0)"><</button>
+      </div>
+  </body>
+
+</html>
